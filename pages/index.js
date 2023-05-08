@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 
-import {parse} from '../lib/parser'
+import {parseMarkdown} from '../lib/parser'
 import {renderMarkdown} from '../lib/renderer'
 
 const Home = (props) => {
@@ -9,7 +9,7 @@ const Home = (props) => {
     const [renderHTML, setRenderHTML] = React.useState("")
 
     React.useEffect(() => {
-        setRenderHTML(renderMarkdown(parse(input)))
+        setRenderHTML(renderMarkdown(parseMarkdown(input)))
     }, [input])
 
     return (

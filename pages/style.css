@@ -136,3 +136,8 @@ h1:after, h2:after {
   top: .33em;
   border-bottom: 1px solid hsla(0,0%,50%,.33);
 }
+
+a {
+  color: #0c93e4;
+  text-decoration: underline;
+}
