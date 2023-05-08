@@ -92,3 +92,47 @@
   text-transform: none;
   text-decoration: none;
 }
+
+.preview-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.paragraph-collection
+
+blockquote {
+  margin: 0;
+}
+
+blockquote p {
+  padding: 15px;
+  background: #eee;
+  border-radius: 5px;
+}
+
+blockquote p::before {
+  content: '\201C';
+}
+
+blockquote p::after {
+  content: '\201D';
+}
+
+p {
+  margin: 0.4em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.8em 0;
+  line-height: 1.33;
+  width: 100%;
+}
+
+h1:after, h2:after {
+  content: "";
+  display: block;
+  position: relative;
+  top: .33em;
+  border-bottom: 1px solid hsla(0,0%,50%,.33);
+}

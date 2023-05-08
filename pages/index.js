@@ -2,14 +2,14 @@ import React from 'react'
 import Head from 'next/head'
 
 import {parse} from '../lib/parser'
-import {renderer} from '../lib/renderer'
+import {renderMarkdown} from '../lib/renderer'
 
 const Home = (props) => {
     const [input, setInput] = React.useState("")
     const [renderHTML, setRenderHTML] = React.useState("")
 
     React.useEffect(() => {
-        setRenderHTML(renderer(parse(input)))
+        setRenderHTML(renderMarkdown(parse(input)))
     }, [input])
 
     return (
@@ -47,9 +47,9 @@ const Home = (props) => {
                         <div className="header-preview">
                             <span className="preview-heading">Preview</span>
                         </div>
-                        <div className="preview-content">
+                        <div style={{width: '100%'}}>
                             {renderHTML ? (
-                                <div
+                                <div className="preview-content"
                                     dangerouslySetInnerHTML={{__html: renderHTML}}
                                 ></div>
                             ) : (
