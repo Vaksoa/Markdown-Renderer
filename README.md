@@ -7,7 +7,7 @@ This enhanced Markdown Renderer is a simple yet powerful tool for rendering Mark
 - Strong (**bold**)
 - Blockquotes
 - Links ([link](http://example.com))
-- Unordered Lists
+- Unordered (& ordered) Lists
 - Text
 
 ## Table of Contents
@@ -104,7 +104,7 @@ As mentioned earlier, this Markdown Renderer is not a comprehensive parser and d
 
 - [x] Parser.js: Implement `parseMarkdown` function for converting Markdown strings to AST representation.
 - [x] Renderer.js: Implement `renderMarkdown` function for converting AST nodes to HTML.
-- [ ] Support ordered lists: Enhance the parser and renderer to support ordered lists in addition to unordered lists.
+- [x] Support ordered lists: Enhance the parser and renderer to support ordered lists in addition to unordered lists.
 - [ ] Add support for tables: Implement table parsing and rendering in both the parser and renderer.
 - [ ] Implement fenced code blocks with language-specific syntax highlighting: Add support for fenced code blocks and integrate a syntax highlighting library for displaying code snippets in different programming languages.
 
